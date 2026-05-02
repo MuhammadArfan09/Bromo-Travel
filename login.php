@@ -34,11 +34,11 @@ $query = mysqli_query($conn, "SELECT * FROM users WHERE email='$email' LIMIT 1")
             exit;
             session_regenerate_id(true);
         } else {
-            echo "<script>alert('Login Gagal');window.location='login.html';</script>";
+            echo "<script>alert('Login Gagal');window.location='index.html';</script>";
         }
 
     } else {
-        echo "<script>alert('Login Gagal');window.location='login.html';</script>";
+        echo "<script>alert('Login Gagal');window.location='index.html';</script>";
     }
 
 } else {
