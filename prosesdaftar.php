@@ -26,7 +26,7 @@ $query = mysqli_query($conn, "INSERT INTO users (nama, email, password)
                               VALUES ('$nama','$email','$password_hash')");
 
 if ($query) {
-    echo "<script>alert('Pendaftaran berhasil, silakan login');window.location='login.html';</script>";
+    echo "<script>alert('Pendaftaran berhasil, silakan login');window.location='index.php';</script>";
 } else {
     echo "<script>alert('Pendaftaran gagal');window.location='daftar.php';</script>";
 }
