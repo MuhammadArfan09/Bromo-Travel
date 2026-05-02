@@ -1,16 +1,5 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "bromo_travel";
-
-$conn = mysqli_connect($host, $user, $pass, $db);
-
-if (!$conn) {
-    die("Koneksi database gagal: " . mysqli_connect_error());
-}
-?>
-<?php
+include 'koneksi.php';
 
 $nama  = $_POST ['nama'];
 $email = $_POST ['email'];

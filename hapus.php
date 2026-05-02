@@ -1,17 +1,6 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "bromo_travel"; 
+include 'koneksi.php';
 
-$conn = mysqli_connect($host, $user, $pass, $db);
-
-if (!$conn) {
-    die("Koneksi database gagal: " . mysqli_connect_error());
-}
-?>
-
-<?php
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 

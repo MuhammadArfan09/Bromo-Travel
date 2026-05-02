@@ -42,6 +42,6 @@ $query = mysqli_query($conn, "SELECT * FROM users WHERE email='$email' LIMIT 1")
     }
 
 } else {
-    header("Location: login.html");
+    header("Location: index.html");
 }
 ?>
